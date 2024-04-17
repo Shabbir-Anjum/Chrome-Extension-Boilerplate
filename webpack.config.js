@@ -34,7 +34,6 @@ if (fileSystem.existsSync(secretsPath)) {
 }
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
-
 var options = {
   mode: process.env.NODE_ENV || 'development',
   entry: {
@@ -219,7 +218,6 @@ var options = {
     level: 'info',
   },
 };
-
 if (env.NODE_ENV === 'development') {
   options.devtool = 'cheap-module-source-map';
 } else {
@@ -232,5 +230,4 @@ if (env.NODE_ENV === 'development') {
     ],
   };
 }
-
 module.exports = options;
